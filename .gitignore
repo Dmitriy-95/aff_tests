@@ -1,0 +1,7 @@
+chromedriver.log
+debug.log
+geckodriver.log
+node_modules/
+reports/
+tests_output/
+.idea/

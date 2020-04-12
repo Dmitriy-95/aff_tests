@@ -1,7 +1,6 @@
 module.exports = {
   'successful login': function (browser) {
     let loginPage = browser.page.loginPage();
-    let basePage = browser.page.basePage();
 
     loginPage
       .navigate()
@@ -10,7 +9,7 @@ module.exports = {
     loginPage
       .logIn('manager@test.com', 'Aa1234');
 
-    basePage
+    browser.page.basePage()
       .assert.visible('#logo');
   }
 };
